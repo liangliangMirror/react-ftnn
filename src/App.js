@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import HeadFtnn from './components/head-ftnn';//头部组件
 import FootFtnn from './components/foot-ftnn';//尾部组件
 import Router from './router/router';//中间部分
 import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './stores/store';
+import './iconfont/iconfont.css'
 class App extends React.Component {
   // constructor(){
   //   super();
@@ -13,13 +14,17 @@ class App extends React.Component {
   // }
   render() {
     return (
-      <Provider store={store}>
-        <HeadFtnn />
-        <HashRouter>
-          <Router />
-        </HashRouter>
-        <FootFtnn />
-      </Provider>
+      <div className="app">
+        <Provider store={store}>
+          <HashRouter>
+            <div className="head"> <HeadFtnn /></div>
+
+            <div className="mind"> <Router /></div>
+
+            <FootFtnn className="foot" />
+          </HashRouter>
+        </Provider>
+      </div>
     );
   }
 }

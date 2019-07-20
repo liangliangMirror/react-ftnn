@@ -1,17 +1,26 @@
 import React from 'react';
 import { NavBar, Icon } from 'antd-mobile';
+import './head.scss'
 class HeadFtnn extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            fontok: true
+        }
+    }
     render() {
         return (
-            <div>  <NavBar
-                mode="light"
-                icon={<Icon type="left" />}
-                onLeftClick={() => console.log('onLeftClick')}
-                rightContent={[
-                    <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
-                    <Icon key="1" type="ellipsis" />,
-                ]}
-            >NavBar</NavBar></div>
+            <div>
+                <NavBar
+                    mode="light"
+                    rightContent={[
+                        <Icon type="search" style={{ marginRight: '16px' }} key="0" />,
+                        <span className="iconfont icon-message" style={{ fontSize: "22PX" }} key="1"></span>
+                    ]}>
+                    <span key="0" style={{ marginRight: "16px" }} className={this.state.fontok ? 'fontChange' : ''} >自选</span>
+                    <span key="1" className={!this.state.fontok ? 'fontChange' : ''} > 市场</span>
+                </NavBar>
+            </div>
         )
     }
 }
