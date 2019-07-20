@@ -8,7 +8,8 @@ class Router extends React.Component {
     render() {
         return (
             <Switch>
-                <Route path="/home" component={Home} />
+                <Route path="/home" component={Home} >
+                </Route>
                 <Route path="/clrcle" component={Clrcle} />
                 <Route path="/consult" component={Consult} />
                 <Route path="/my" component={My} />

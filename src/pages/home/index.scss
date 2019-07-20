@@ -1,9 +1,24 @@
-.outside {
-    overflow: hidden;
+.inside {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    overflow: auto;
+    height: 100%;
 
-    .inside {
-        height: 1000px;
-        overflow: auto;
-        background: #fff;
+    .head {
+        height: 42px;
+    }
+
+    .Sort {
+        height: 26px;
+    }
+
+    .Content {
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .NoticeBar {
+        height: 2rem;
     }
 }

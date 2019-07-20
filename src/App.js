@@ -18,9 +18,7 @@ class App extends React.Component {
         <Provider store={store}>
           <HashRouter>
             <div className="head"> <HeadFtnn /></div>
-
             <div className="mind"> <Router /></div>
-
             <FootFtnn className="foot" />
           </HashRouter>
         </Provider>
