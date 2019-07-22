@@ -1,0 +1,52 @@
+.sort {
+    width: 100%;
+    height: 100%;
+    padding-right: 4%;
+    box-sizing: border-box;
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        .span {
+            width: 5.625rem;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .i {
+                display: flex;
+                width: .75rem;
+                flex-flow: column;
+                align-items: center;
+
+                .icon {
+                    display: inline-block;
+                    border: .25rem solid;
+                }
+
+                .up {
+                    border-color: transparent transparent #7B7B7B transparent;
+                    margin-bottom: .25rem;
+                }
+
+                .down {
+                    border-color: #7B7B7B transparent transparent transparent
+                }
+            }
+        }
+
+        .p {
+            width: 11.25rem;
+            height: 100%;
+            display: flex;
+
+            .span {
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+}
