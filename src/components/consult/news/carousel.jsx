@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Carousel, WingBlank } from 'antd-mobile';
 
 export default class ConsultCarousel extends React.Component {

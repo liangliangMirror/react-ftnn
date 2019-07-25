@@ -15,13 +15,16 @@ class NoticeBar extends React.Component {
     }
     async ajax() {
         const { data: { data: shdata } } = await axios.get(`http://localhost:3100/api/quote/index-quote?_=1563959648218`);
+        // const sbdata = await axios.get(`http://localhost:3100/api/trade/quote-minute-v2?security_id=800000&_=1564019951029`);
+        // const sddata = await axios.get(`http://localhost:3100/api/trade/quote-basic-v3?security_id=800000&_=1564019806071`);
         this.setState({
             data: [...shdata.indexList,]
         })
+        // console.log(sbdata, shdata, sddata)
     }
     render() {
         return (
-            <div>
+            <div style={{ position: "relative" }} className="noticebar">
                 <WingBlank>
                     <Carousel className="my-carousel"
                         vertical
@@ -33,9 +36,9 @@ class NoticeBar extends React.Component {
                     >
                         {
                             this.state.data.map((item, idx) => {
-                                console.log(item.change_ratio)
                                 return (
-                                    <div className={"v-item div-s div-sx"} key={idx}>
+                                    <div className={item.change_ratio === undefined ? "v-item div-s " : (item.change_ratio.slice(0, 1) !== "-" ? "v-item div-s " : "v-item div-s div-sx")} key={idx}>
+                                        {console.log()}
                                         <span className="span1">{item.security_name}</span>
                                         <span className="span2">{item.price}</span>
                                         <span className="span3">+{item.change}</span>
@@ -44,11 +47,9 @@ class NoticeBar extends React.Component {
                                 )
                             })
                         }
-
-                        {/* <div className="v-item">carousel 2</div> */}
-                        {/* <div className="v-item">carousel 3</div> */}
                     </Carousel>
                 </WingBlank>
+                <i className="icon-up iconfont up"></i>
             </div>
         )
     }
