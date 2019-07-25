@@ -11,10 +11,12 @@ class Home extends React.Component {
     render() {
         return (
             <div className="inside">
-                <div className="head">
-                    <Head />
-                </div>
-                <div className="Sort"> <Sort /></div>
+
+                {
+                    this.props.data.sorts ? <><div className="head"><Head /> </div> <div className="Sort"> <Sort /></div></> : ""
+                }
+
+
                 <div className="Content"><Router /> </div>
                 <div className="NoticeBar"> <NoticeBar /></div>
             </div>
