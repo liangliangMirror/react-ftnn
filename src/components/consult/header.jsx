@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Switch, Route, withRouter } from 'react-router-dom';
+import { NavLink, Switch, Route, withRouter, Redirect } from 'react-router-dom';
 // 样式
 import "./header.scss";
 
