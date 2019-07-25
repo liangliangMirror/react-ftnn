@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import PushItem from './pushItem';
 
 class Push extends Component {
     render() {
         return (
-            <div>
-                Push
+            <div className="consult-push">
+                <PushItem />
             </div>
         )
     }
