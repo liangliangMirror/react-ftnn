@@ -1,28 +1,55 @@
 import React from 'react';
-import { NavBar, Icon } from 'antd-mobile';
+import { NavBar } from 'antd-mobile';
 import './head.scss'
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 class HeadFtnn extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            fontok: true
+            idx: 0
         }
+        this.middle = this.middle.bind(this);
+    }
+    middle(idx) {
+        this.setState({
+            idx,
+        })
+    }
+    componentWillMount() {
+        this.props.dispatch({
+            type: "BBB"
+        })
     }
     render() {
         return (
             <div>
                 <NavBar
                     mode="light"
-                    rightContent={[
-                        <Icon type="search" style={{ marginRight: '16px' }} key="0" />,
-                        <span className="iconfont icon-message" style={{ fontSize: "22PX" }} key="1"></span>
-                    ]}>
-                    <span key="0" style={{ marginRight: "16px" }} className={this.state.fontok ? 'fontChange' : ''} >自选</span>
-                    <span key="1" className={!this.state.fontok ? 'fontChange' : ''} > 市场</span>
+                    leftContent={
+                        [
+                            <i className={!this.props.data.head.leftbutton ? "" : "icon-arrowleft iconfont"} style={{ fontSize: "20px" }} key="0" />,
+                        ]
+                    }
+                    rightContent={
+                        this.props.data.head[2].rigthicon.map((item, idx) => {
+                            return (
+                                <i className={`iconfont icon ${item.icon}`} key={idx} style={idx === this.props.data.head[2].rigthicon.length - 1 ? { margin: 0 } : {}} />
+                            )
+                        })
+                    }>
+                    {
+                        this.props.data.head[1].headmiddle.map((item, idx) => {
+                            return (
+                                <span key={idx} className={this.state.idx === idx ? 'fontChange' : ''} onClick={this.middle.bind(this, idx)}>{item}</span>
+                            )
+                        })
+                    }
                 </NavBar>
             </div>
         )
     }
 }
+HeadFtnn = withRouter(HeadFtnn);
 
-export default HeadFtnn;
+export default connect(state => state)(HeadFtnn);

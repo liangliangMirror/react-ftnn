@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, WhiteSpace, Flex } from 'antd-mobile';
+// import { Tabs, WhiteSpace, Flex } from 'antd-mobile';
 // 走马灯
 import ConsultCarousel from './carousel'
 // 快讯
@@ -10,9 +10,6 @@ import Main from './main'
 import './news.scss'
 
 class News extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return (

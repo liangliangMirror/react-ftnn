@@ -1,11 +1,8 @@
 
 import React, { Component } from 'react'
-import { Carousel, WingBlank, Flex } from 'antd-mobile';
+import { Carousel, WingBlank } from 'antd-mobile';
 
 class Flash extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return (

@@ -10,6 +10,7 @@ class Router extends React.Component {
             <Switch>
                 <Route path="/home" component={Home} >
                 </Route>
+                <Route path="/aaa" component={Home} />
                 <Route path="/clrcle" component={Clrcle} />
                 <Route path="/consult" component={Consult} />
                 {/* <Route path="/my" component={My} /> */}
