@@ -9,6 +9,7 @@ import Main from './main'
 
 import './news.scss'
 
+
 class News extends Component {
     constructor(props) {
         super(props)
@@ -16,7 +17,7 @@ class News extends Component {
 
     render() {
         return (
-            <div>
+            <div className="news">
                 <div className="news-consult">
                     <ConsultCarousel />
                 </div>

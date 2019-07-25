@@ -1,3 +1,12 @@
+.news {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.mind {
+    background-color: #fff;
+}
+
 .news-consult {
     &:after {
         content: "";
@@ -17,6 +26,9 @@
 }
 
 .news-main {
+    overflow: hidden;
+    overflow-y: auto;
+
     &:after {
         content: "";
         clear: both;
