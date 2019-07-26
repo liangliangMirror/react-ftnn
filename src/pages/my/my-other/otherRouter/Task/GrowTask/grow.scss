@@ -1,0 +1,57 @@
+.task-grow{
+    background-color: #eee;
+    overflow: hidden;
+    .task-grow-h2{
+        background-color: #fff;
+        margin: 20px 10px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: normal;
+        .h2-row{
+            padding: 15px 0;
+            img{
+                width: 66px;
+                height: 66px;
+            }
+            h2{
+                font-size: 22px;
+                line-height: 30px;
+                text-align: left;
+            }
+            h3{
+                font-size: 14px;
+                line-height: 18px;
+                text-align: left;
+                color: #9b9b9b;
+            }
+        }   
+        .task-grow-h4{
+            border-top: 1px solid #eee;
+            .h4-row{
+                padding: 10px 0;
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+                h4{
+                    font-size: 16px;
+                text-align: left;
+                line-height: 22px;
+                }
+                h6{
+                    font-size: 14px;
+                text-align: left;
+                line-height: 18px;
+                }
+                span{
+                    font-size: 14px;
+                    padding: 5px 10px;
+                    color: #ff7c00;
+                    border: 1px solid #ff7c00;
+                    border-radius: 12px;
+                }
+            }  
+        }
+    } 
+}
