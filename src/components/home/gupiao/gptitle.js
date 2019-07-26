@@ -29,7 +29,7 @@ class GpTitle extends React.Component {
                 "涨跌",
                 "数据价格",
                 "上市价",
-                "平均市净率",
+                "市净率",
                 "周期",
                 "变化比率"
             ]

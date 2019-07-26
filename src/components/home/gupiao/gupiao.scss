@@ -2,6 +2,7 @@
     width: 100%;
     padding: 0 .625rem;
     box-sizing: border-box;
+    overflow: auto;
 
     .gphead {
         width: 100%;
@@ -12,6 +13,37 @@
             line-height: 2.8125rem;
             font-size: 1rem;
             color: rgba(240, 248, 255, 0.699);
+        }
+    }
+
+    .gpmx {
+        display: flex;
+
+        .mx {
+            flex: 1;
+
+            .p {
+                display: flex;
+                justify-content: space-around;
+
+                .spamwhite {
+                    color: #fff;
+                }
+            }
+
+            .mxdiv {
+                display: flex;
+                justify-content: space-between;
+
+                .greenspan {
+                    color: #58bc58;
+                }
+
+                .redspan {
+                    color: rgb(253, 108, 108);
+                }
+            }
+
         }
     }
 }

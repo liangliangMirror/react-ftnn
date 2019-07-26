@@ -14,9 +14,8 @@ class NoticeBar extends React.Component {
         this.ajax();
     }
     async ajax() {
-        const { data: { data: shdata } } = await axios.get(`http://localhost:3100/api/quote/index-quote?_=1563959648218`);
-        // const sbdata = await axios.get(`http://localhost:3100/api/trade/quote-minute-v2?security_id=800000&_=1564019951029`);
-        // const sddata = await axios.get(`http://localhost:3100/api/trade/quote-basic-v3?security_id=800000&_=1564019806071`);
+        const { data: { data: shdata } } = await axios.get(`http://localhost:3100/api/quote/index-quote?_=${new Date().getTime()}`);
+
         this.setState({
             data: [...shdata.indexList,]
         })
@@ -41,7 +40,7 @@ class NoticeBar extends React.Component {
                                         {console.log()}
                                         <span className="span1">{item.security_name}</span>
                                         <span className="span2">{item.price}</span>
-                                        <span className="span3">+{item.change}</span>
+                                        <span className="span3">{item.change}</span>
                                         <span className="span4">{item.change_ratio}</span>
                                     </div>
                                 )
