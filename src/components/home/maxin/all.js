@@ -1,6 +1,7 @@
 import React from 'react';
 import './all.scss';
 import { withRouter } from 'react-router-dom'
+import { connect } from 'react-redux'
 const axios = require("axios")
 class All extends React.Component {
     constructor() {
@@ -20,6 +21,10 @@ class All extends React.Component {
                 id,
             }
         })
+        this.props.dispatch({
+            type: "SORT",
+            ok: false
+        })
     }
     componentWillMount() {
         this.ajax(this.state.id);
@@ -34,9 +39,7 @@ class All extends React.Component {
             }, 5000)
         })
     }
-    componentWillUnmount() {
-        clearInterval(this.state.timer)
-    }
+
     componentDidUpdate(prevProps, prevState) {
 
         if (this.state.data2 === prevState.data) {
@@ -47,6 +50,9 @@ class All extends React.Component {
             })
         }
 
+    }
+    componentWillUnmount() {
+        clearInterval(this.state.timer)
     }
     async  ajax(id) {
         const { data: { data: shdata } } = await axios.get(`http://localhost:3100/api/stock/stock-rank?plate_id=3000005&_=${id}`);
@@ -90,4 +96,4 @@ class All extends React.Component {
     }
 }
 All = withRouter(All)
-export default All;
+export default connect(state => state)(All);

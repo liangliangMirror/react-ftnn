@@ -14,8 +14,8 @@ export default (state = {
                     }
                 ]
             }
-        ]
-
+        ],
+        sorts: true,
     },
     //数据写这里
 }, action) => {
@@ -29,6 +29,14 @@ export default (state = {
             } else {
                 let obj = JSON.parse(window.localStorage.getItem("head"))
                 state.data.head = obj
+            }
+            return { ...state }
+        case 'SORT':
+
+            if (action.ok) {
+                state.data.sorts = true
+            } else {
+                state.data.sorts = false;
             }
             return { ...state }
         default:

@@ -3,7 +3,7 @@ import All from '../../components/home/maxin/all'
 import Harbor from '../../components/home/maxin/harbor'
 import Beauty from '../../components/home/maxin/beauty'
 import Deep from '../../components/home/maxin/deep'
-import Gupiao from '../../components/home/maxin/gupiao'
+import Gupiao from '../../components/home/gupiao/gupiao'
 import { Route, Switch, Redirect } from 'react-router-dom';
 class Router extends React.Component {
     render() {
