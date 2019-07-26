@@ -1,10 +1,12 @@
 import React from 'react';
 import { Carousel, WingBlank } from 'antd-mobile';
+import './carousel.scss'
 
 export default class ConsultCarousel extends React.Component {
+
     state = {
-        data: ['1', '2', '3', '4'],
-        imgHeight: "176px",
+        data: ['1', '2', '3'],
+        imgHeight: 176,
     }
     componentDidMount() {
         // simulate img loading
@@ -16,30 +18,25 @@ export default class ConsultCarousel extends React.Component {
     }
     render() {
         return (
-            <WingBlank style={{ marginTop: "14px" }}>
-                <Carousel className="space-carousel"
-                    frameOverflow="visible"
-                    cellSpacing={10}
-                    slideWidth={0.8}
-                    autoplay
+            <WingBlank>
+                <Carousel
+                    autoplay={false}
                     infinite
+                    // autoplay={true}
+                    autoplayInterval={2000}
+                    cellSpacing={5}
+                    slideWidth={0.9}
                     beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-                    afterChange={index => this.setState({ slideIndex: index })}
+                    afterChange={index => console.log('slide to', index)}
                 >
-                    {this.state.data.map((val, index) => (
+                    {this.state.data.map(val => (
                         <a
                             key={val}
-                            href="###"
-                            style={{
-                                display: 'block',
-                                position: 'relative',
-                                top: this.state.slideIndex === index ? -10 : 0,
-                                height: this.state.imgHeight,
-                                boxShadow: '2px 1px 1px rgba(0, 0, 0, 0.2)',
-                            }}
+            
+                            style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
                         >
                             <img
-                                src={`https://pubimg.futunn.com/2019072401203203bf5fbdc388d.jpg`}
+                                src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
                                 alt=""
                                 style={{ width: '100%', verticalAlign: 'top' }}
                                 onLoad={() => {
@@ -55,3 +52,6 @@ export default class ConsultCarousel extends React.Component {
         );
     }
 }
+
+
+

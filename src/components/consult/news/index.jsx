@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Tabs, WhiteSpace, Flex } from 'antd-mobile';
 // 走马灯
 import ConsultCarousel from './carousel'
 // 快讯
@@ -21,9 +20,9 @@ class News extends Component {
                 <div className="news-flash">
                     <Flash />
                 </div>
-                <div className="news-main">
+                {/* <div className="news-main">
                     <Main />
-                </div>
+                </div> */}
             </div>
         )
     }
