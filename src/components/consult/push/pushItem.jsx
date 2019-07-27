@@ -25,6 +25,7 @@ class PushItem extends Component {
         let news = (await axios.get("http://localhost:3100/my/client/market-list?news_id=" + this.state.page)).data.data.list
 
         console.log(news)
+
         // 延迟加载
         await new Promise((resolve) => {
             setTimeout(() => {
@@ -60,7 +61,6 @@ class PushItem extends Component {
     }
 
     render() {
-        // console.log("this.state.news", this.state.news)
         return (
             <div className="push-item" onScroll={this.scroll}>
                 {/* <div className="item">
