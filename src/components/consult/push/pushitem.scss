@@ -1,0 +1,42 @@
+.push-item {
+    height: 520px;
+    overflow-y: auto;
+
+    .item {
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .6rem;
+        border-bottom: 1px solid #e4e3e3;
+
+
+        .item-left {
+            height: 100%;
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .push-title {
+                font-weight: normal;
+                color: #242424;
+            }
+
+            .time {
+                color: rgb(200, 200, 200);
+                font-size: 0.95rem;
+            }
+        }
+
+        .item-right {
+            height: 100%;
+            flex: 1.8;
+
+            .push-img {
+                height: 100%;
+                border-radius: 6px;
+            }
+        }
+    }
+}

@@ -5,15 +5,19 @@
     .am-navbar-title {
         color: #999;
         font-size: 16px;
+
+        span {
+            margin-right: 16px;
+        }
     }
 
     .fontChange {
         font-size: 20px;
         color: #fff;
     }
-}
 
-.fiex {
-    position: fixed;
-    top: 0;
+    .icon {
+        margin-right: 16px;
+        font-size: 20px;
+    }
 }

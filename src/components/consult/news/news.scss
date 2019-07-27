@@ -1,0 +1,38 @@
+.news {
+    background-color: rgb(251, 249, 249);
+    overflow-y: auto;
+    height: 520px;
+}
+
+
+.news-consult {
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+
+    }
+}
+
+.news-flash {
+    margin-top: 16px;
+
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+
+    }
+}
+
+.news-main {
+    overflow: hidden;
+    overflow-y: auto;
+
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+
+    }
+}

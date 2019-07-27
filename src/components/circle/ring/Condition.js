@@ -5,7 +5,7 @@ import { Carousel, WingBlank } from 'antd-mobile';
 class Condition extends React.Component {
     state = {
         data: ['1', '2', '3','4','5','6','7','8','9','10'],
-        imgHeight: 176,
+        
       }
       componentDidMount() {
         setTimeout(() => {
@@ -50,18 +50,17 @@ class Condition extends React.Component {
                             afterChange={index => this.setState({ slideIndex: index })}
                             >
                             {this.state.data.map((val, index) => (
-                                <a
+                                <button
                                 key={val}
                                 style={{
                                     display: 'block',
                                     position: 'relative',
-                                    height: this.state.imgHeight,
                                     boxShadow: '2px 1px 1px rgba(0, 0, 0, 0.2)',
                                 }}
                                 >
                                 <span className="tao">#浑水失手?如何看待安踏股价创新高?</span>
                                 <span className="lun"><img src={require('./txtwo.jpg')} alt="头像"/><em>正在讨论</em></span>
-                                </a>
+                                </button>
                             ))}
                             </Carousel>
                         </WingBlank>
