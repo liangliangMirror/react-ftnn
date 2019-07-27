@@ -16,6 +16,7 @@ export default (state = {
             }
         ],
         sorts: true,
+        stock: "",
     },
     //数据写这里
 }, action) => {
@@ -38,6 +39,9 @@ export default (state = {
             } else {
                 state.data.sorts = false;
             }
+            return { ...state }
+        case "STOCK":
+            state.data.stock = action.stock;
             return { ...state }
         default:
             return state

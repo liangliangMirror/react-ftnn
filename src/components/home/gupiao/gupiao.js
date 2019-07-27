@@ -105,6 +105,7 @@ class Gupiao extends React.Component {
                         </div>
                         <div className="shade"></div>
                     </div>
+
                     <div>
                         <p>成分股</p>
                         <Sort />

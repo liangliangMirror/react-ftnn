@@ -1,6 +1,6 @@
 import React from 'react';
 import './head.scss';
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 class Head extends React.Component {
     constructor(props) {
         super(props);
@@ -18,8 +18,14 @@ class Head extends React.Component {
                 }, {
                     wenzi: "沪深",
                     to: "/deep"
-                }]
+                }],
+            idx: 0,
         }
+    }
+    spans(idx) {
+        this.setState({
+            idx,
+        })
     }
     render() {
         return (
@@ -28,9 +34,9 @@ class Head extends React.Component {
                     {
                         this.state.title.map((item, index) => {
                             return (
-                                <span key={index}> <NavLink to={"/home" + item.to}>
-                                    {item.wenzi}
-                                </NavLink></span>
+                                <span key={index} onClick={this.spans.bind(this, index)}>
+                                    <button className={index === this.state.idx ? "active" : ""}> {item.wenzi} </button>
+                                </span>
                             )
                         })
                     }

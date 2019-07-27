@@ -47,7 +47,13 @@ class TimeSharingplan extends React.Component {
                 return textCfg;
             }
         });
-        chart.line().position('day*value');
+        chart.line(
+            {
+                sortable: false,
+                startOnZero: false,
+                connectNulls: true,
+            }
+        ).position('day*value');
         chart.render();
     }
     componentWillReceiveProps(nextProps) {
