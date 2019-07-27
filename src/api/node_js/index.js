@@ -14,5 +14,5 @@ app.use('/api/*', proxy({
 }))
 
 app.listen(3100, () => {
-    console.log('cg')
+    console.log('3100 success!!!')
 })

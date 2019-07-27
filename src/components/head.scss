@@ -5,11 +5,19 @@
     .am-navbar-title {
         color: #999;
         font-size: 16px;
+
+        span {
+            margin-right: 16px;
+        }
     }
 
     .fontChange {
         font-size: 20px;
         color: #fff;
-        
+    }
+
+    .icon {
+        margin-right: 16px;
+        font-size: 20px;
     }
 }

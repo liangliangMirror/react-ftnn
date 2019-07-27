@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import { NavLink, Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { NavLink, Switch, Route, withRouter, Redirect } from 'react-router-dom';
 // 样式
 import "./header.scss";
 
+import News from './news/index';
+import Column from './column/index'
+import Newflash from './newflash/index'
+import Mine from './mine/index'
+import Calendar from './calendar/index'
+import Push from './push/index'
 
-import News from './news/news';
+
 
 class ConsultHeader extends Component {
 
@@ -76,7 +82,12 @@ class ConsultHeader extends Component {
                 </ul>
                 <Switch>
                     <Route path={"/consult/news"} component={News} />
-                    {/* <Redirect from="" to="" exact /> */}
+                    <Route path={"/consult/column"} component={Column} />
+                    <Route path={"/consult/newflash"} component={Newflash} />
+                    <Route path={"/consult/mine"} component={Mine} />
+                    <Route path={"/consult/calendar"} component={Calendar} />
+                    <Route path={"/consult/push"} component={Push} />
+                    <Redirect to="/consult/news" exact />
                 </Switch>
 
             </div>

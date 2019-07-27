@@ -1,0 +1,30 @@
+.gpul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: 33%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: .625rem;
+        box-sizing: border-box;
+        height: 1.25rem;
+
+        &:first-child {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .gpspan {
+            color: #fff;
+        }
+
+        .gpredcolor {
+            color: rgb(253, 108, 108);
+        }
+    }
+
+
+
+}

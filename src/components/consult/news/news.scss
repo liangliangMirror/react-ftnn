@@ -1,3 +1,10 @@
+.news {
+    background-color: rgb(251, 249, 249);
+    overflow-y: auto;
+    height: 520px;
+}
+
+
 .news-consult {
     &:after {
         content: "";
@@ -8,6 +15,8 @@
 }
 
 .news-flash {
+    margin-top: 16px;
+
     &:after {
         content: "";
         clear: both;
@@ -17,6 +26,9 @@
 }
 
 .news-main {
+    overflow: hidden;
+    overflow-y: auto;
+
     &:after {
         content: "";
         clear: both;
