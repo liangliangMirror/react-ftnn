@@ -30,7 +30,7 @@ export default class ConsultCarousel extends React.Component {
                     afterChange={index => console.log('slide to', index)}
                 >
                     {this.state.data.map(val => (
-                        <a
+                        <button
                             key={val}
             
                             style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
@@ -45,7 +45,7 @@ export default class ConsultCarousel extends React.Component {
                                     this.setState({ imgHeight: 'auto' });
                                 }}
                             />
-                        </a>
+                        </button>
                     ))}
                 </Carousel>
             </WingBlank>
