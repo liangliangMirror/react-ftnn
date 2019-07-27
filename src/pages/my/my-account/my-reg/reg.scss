@@ -1,0 +1,28 @@
+.my-reg{
+    height: 100%;
+    padding: 45px 20px;
+    overflow: auto;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    img{
+        width: 180px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 20px;
+        padding: 16px;
+    }
+    .reg-form{
+        width: 280px;
+        margin-left: 45px;
+        .reg-btn{
+            width: 100%;
+        }
+        .myCanvas{
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 5px;
+        }
+    }
+}

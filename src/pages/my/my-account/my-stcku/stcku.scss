@@ -1,0 +1,48 @@
+.reg-stcku{
+    height: 100%;
+    overflow: auto;
+    background-color: #ddd;
+    .reg-stcku-top{
+        background-color: #fff;
+        padding: 10px;
+        margin-bottom: 20px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        h4{
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0;
+        }
+        p{
+            padding: 0;
+            margin: 5px 0 0;
+        }
+    }
+    .reg-stcku-list{
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        h3{
+            text-align: left;
+            font-size: 14px;
+            line-height: 48px;
+        }
+        i{
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            // background-color: pink;
+            transform: scale(0.5);
+            background-image: url('https://my.futu5.com/images/mobile/moreIcon/icon.png');
+            // background-size: 50%;
+        }
+        p{
+            font-size: 12px;
+            line-height: 12px;
+            margin-top: -10px;
+        }
+    }
+}

@@ -14,6 +14,8 @@ import Simulation from '../pages/my/my-other/otherRouter/Simulation'
 import Staff from '../pages/my/my-other/otherRouter/Staff'
 import Help from '../pages/my/my-kefu/help'
 import HelpDetails from '../pages/my/my-kefu/details'
+import MyReg from '../pages/my/my-account/my-reg'
+import RegStcku from '../pages/my/my-account/my-stcku'
 
 
 
@@ -42,6 +44,8 @@ class Router extends React.Component {
                 <Route path='/staff' component={Staff}></Route>
                 <Route path='/help' component={Help}></Route>
                 <Route path='/helpdetails' component={HelpDetails}></Route>
+                <Route path='/reg' component={MyReg}></Route>
+                <Route path='/stcku' component={RegStcku}></Route>
 
                 <Redirect from="/" to="/home" exact />
             </Switch>

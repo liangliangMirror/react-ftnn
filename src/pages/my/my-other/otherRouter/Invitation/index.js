@@ -62,9 +62,9 @@ class Invitation extends React.Component{
             <div className='invitation-div2'>
                 <h2>我的邀请记录</h2>
                 <Menu mode="horizontal" onClick={this.handleClick.bind(this)} selectedKeys={[this.state.current]}>
-                    <MenuItem key='1'>邀请开户</MenuItem>
-                    <MenuItem key='2'>邀请入金</MenuItem>
-                    <MenuItem key='3'>邀请转仓</MenuItem>
+                    <MenuItem key='1' style={{width:'33%'}}>邀请开户</MenuItem>
+                    <MenuItem key='2' style={{width:'33%'}}>邀请入金</MenuItem>
+                    <MenuItem key='3' style={{width:'33%'}}>邀请转仓</MenuItem>
                 </Menu>
                 <ul className='invitation-ul'>
                     <p><span>昵称</span><span>{this.state.str}进度</span></p>

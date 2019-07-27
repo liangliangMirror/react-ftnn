@@ -1,6 +1,7 @@
 import React from 'react'
 import './simulation.scss'
-import {Col,Row} from 'antd'
+import {Col,Row, Menu} from 'antd'
+import MenuItem from 'antd/lib/menu/MenuItem';
 
 
 
@@ -58,7 +59,13 @@ function Simulation(){
             </Row>
         </div>
         <div className='simulation-table'>
-
+            <Menu mode="horizontal">
+                <MenuItem style={{width:'50%',textAlign:'center'}}>持仓(0)</MenuItem>
+                <MenuItem style={{width:'50%',textAlign:'center'}}>今日订单(0/0)</MenuItem>
+            </Menu>
+            <ul>
+                
+            </ul>
         </div>
     </div>
 }

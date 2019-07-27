@@ -1,7 +1,8 @@
 export default (state = {
     data: {
         xxx: "xxx",
-        MyOtherQuotationHong:[]
+        MyOtherQuotationHong:[],
+        IsLogin:false
     },
     //数据写这里
 }, action) => {
@@ -12,9 +13,11 @@ export default (state = {
                 ...state,
                 MyOtherQuotationHong:[action.payload]
             }
-        case 'BBB':
-
-            return state
+        case 'Add_My_Account_My_Stcku_Login':
+            return {
+                ...state,
+                IsLogin:action.payload
+            }
         default:
             return state
     }
