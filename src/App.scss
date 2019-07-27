@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background: rgb(27, 27, 27);
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    color: #7B7B7B;
+
+    .head {
+        flex: .08;
+    }
+
+    .mind {
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .foot {
+        flex: .1;
+    }
+}
