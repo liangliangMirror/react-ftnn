@@ -1,0 +1,70 @@
+.kecheng{
+    height: 100%;
+    overflow: auto;
+    background-color: #dddddd;
+    img{
+        width: 100%;
+    }
+    .kecheng-row{
+        background-color: #fff;
+        text-align: center;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        i{
+            display: inline-block;
+            width: 82px;
+            height: 82px;
+            transform: scale(0.5);
+            background-image: url('https://live.futunn.com/images/global/icon.png');
+            background-position: -10px -690px;
+        }
+        p{
+            font-size: 12px;
+            left: 14px;
+            color: #808f90;
+            margin: -45px 0 0;
+        }
+    }
+    .kecheng-route{
+        margin-top: 20px;
+        background-color: #fff;
+        img{
+            width: 160px;
+            height: 90px;
+        }
+        h3{
+            font-size: 16px;
+            line-height: 32px;
+            padding-left: 22px;
+            margin: 12px 0 0;
+        }
+        h4{
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h5{
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 9px;
+            color: #808f9e;
+        }
+    }
+    .kecheng-img{
+        position: relative;
+        .kecheng-img-1{
+            width: 270px;
+            height: 190px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .kecheng-img-2{
+            width: 350px;
+            height: 263px;
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+        }
+    }
+}

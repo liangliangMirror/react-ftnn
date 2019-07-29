@@ -27,4 +27,11 @@ Router.use('/myapi/*', proxy({
         "^/myapi": "/",
     }
 }))
+Router.use('/live/*', proxy({
+    target: "https://live.futunn.com",
+    changeOrigin: true,
+    pathRewrite: {
+        "^/live": "/",
+    }
+}))
 module.exports = Router;
