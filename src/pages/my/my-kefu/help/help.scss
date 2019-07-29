@@ -1,0 +1,36 @@
+.my-kefu-help{
+    background-color: #fff;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 10px;
+    img{
+        width: 100%;
+    }
+    .help-input-div{
+        text-align: center;
+        height: 40px;
+        .help-input{
+            width: 80%;
+            height: 40px;
+            transform: translateY(-20px) 
+        }
+    }
+    .help-col{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .kefu-help-btm{
+        background-color: #2151b1;
+        height: 64px;
+        padding: 10px 0 0 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+    }
+}

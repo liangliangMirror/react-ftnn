@@ -1,68 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 前言
 
-## Available Scripts
+React的项目模拟
 
-In the project directory, you can run:
+## 项目名称
 
-### `npm start`
+富途牛牛APP
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 技术栈
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+React+create-react-app+React-router+React-redux+antd+@antv/f2+scss+webpack+axios+ES6/7
 
-### `npm test`
+## 项目运行
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 注意：由于涉及大量的ES6/7等新属性，node需要6.0以上的版本
 
-### `npm run build`
+```
+    git clone https://github.com/gzh51904/Futuniuniu/
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    cd ftnn
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+    npm install 或yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    npm start
+```
 
-### `npm run eject`
+## 链接
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [富途牛牛官网/我们仿的是APP](https://www.futunn.com/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [我们的APP](###)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 部分截图
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 主页
 
-## Learn More
+<img src="./src/images/dome3.gif"  width="365" height="619" /><img src="./src/images/dome4.gif"  width="365" height="619" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 项目目标
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [x] 股市的实时更新 -- 完成
+- [x] 股市趋势的折线图展示 -- 完成
+- [ ] 股市统计圆盘展示 -- 未完成
 
-### Code Splitting
+## 项目职责
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- 项目分配
+  - 组长:梁唯汉
+    - 主页股市的实时监听
+    - 实现主页功能的大部分
+    - 一些股市数据的图表展示
+    - 服务器的代理
+  - 组员:刘俊
+    - 牛牛圈的功能大部分的实现
+  - 组员:吴广军
+    - 咨询的功能大部分的实现
+  - 组员:沈卓
+    - 我的的功能大部分的实现
+    - 登陆注册的实现
 
-### Analyzing the Bundle Size
+## 贡献者
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<table><tbody><tr>
+<td>
+   <a href="https://github.com/liangliangMirror" title="liangliangMirror"> <img src="https://avatars3.githubusercontent.com/u/49984570?s=400&v=4 " width="100px" height="60px" /> </a></td>
+   <td><a href="https://github.com/tree-file" title="tree-file"> <img src="https://avatars0.githubusercontent.com/u/50487470?s=400&v=4" width="100px"  height="60px" /></a></td>
+  <td> <a href="https://github.com/MaxinFN/" title="MaxinFN"> <img src="https://avatars2.githubusercontent.com/u/50573322?s=400&v=4" width="100px" height="60px" /> </a></td>
+  <td> <a href="https://github.com/git-shenzhuo" title="shenzhuo"> <img src="https://avatars0.githubusercontent.com/u/51358876?s=400&v=4" width="100px" height="60px" /> </a></td>
+<tr></tbody></table> 
