@@ -4,6 +4,7 @@ import Clrcle from '../pages/clrcle/'
 import Consult from '../pages/consult/'
 import My from '../pages/my/'
 import { Route, Redirect, Switch } from 'react-router-dom';
+
 class Router extends React.Component {
     render() {
         return (

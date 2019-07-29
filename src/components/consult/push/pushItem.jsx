@@ -24,7 +24,6 @@ class PushItem extends Component {
     async getdata() {
         let news = (await axios.get("http://localhost:3100/my/client/market-list?news_id=" + this.state.page)).data.data.list
 
-        console.log(news)
 
         // 延迟加载
         await new Promise((resolve) => {
@@ -35,10 +34,9 @@ class PushItem extends Component {
 
         this.setState({
             news: [...this.state.news, ...news],
-            page: ++this.state.page,
+            page: this.state.page - 10,
         })
 
-        console.log("this.state.page", this.state.page)
 
     }
 
@@ -49,7 +47,7 @@ class PushItem extends Component {
 
         let ih = scrollHeight - scrollTop - windowHeight
 
-        console.log(scrollTop, windowHeight, scrollHeight, ih)
+
 
         if (ih <= 1) {
             this.getdata()

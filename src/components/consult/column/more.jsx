@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './more.scss';
-// import ConsultCarousel from '../news/carousel';
+
 
 class More extends Component {
     constructor(props) {
@@ -31,7 +31,6 @@ class More extends Component {
             }, 500);
         })
 
-        console.log(news)
 
         this.setState({
             news: [...this.state.news, ...news],
@@ -42,16 +41,13 @@ class More extends Component {
     gun() {
         let scrollTop =
             document.documentElement.scrollTop || document.getElementsByClassName("more")[0].scrollTop;
-
+            
         let windowHeight = document.getElementsByClassName("more")[0].clientHeight;
-        // document.documentElement.clientHeight || document.getElementsByClassName("more")[0].clientHeight;
 
         let scrollHeight = document.getElementsByClassName("more")[0].scrollHeight;
-        // document.documentElement.scrollHeight || document.getElementsByClassName("more")[0].scrollHeight;
 
         let ih = scrollHeight - scrollTop - windowHeight
 
-        console.log(scrollTop, windowHeight, scrollHeight, ih)
 
         if (ih <= 1) {
             this.getdata()
