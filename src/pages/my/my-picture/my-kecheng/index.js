@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import './kecheng.scss'
-import { Col ,Row,List,Menu,Button} from 'antd';
+import { Col,List,Menu,Button} from 'antd';
 class MyKecheng extends React.Component{
     constructor(){
         super();
@@ -92,7 +92,7 @@ class MyKecheng extends React.Component{
                 </div>
                 })
                 :
-                (this.state.list.total_count == 25?
+                (this.state.list.total_count === 25?
                 <div className='kecheng-route'>
                     <h3>共25门</h3>
                     <List
@@ -116,7 +116,7 @@ class MyKecheng extends React.Component{
                     <List
                         dataSource={this.state.list.list}
                         renderItem={item => (
-                        <a href={item.url} target='_blank' ><List.Item key={item.course_id}>   
+                        <a href={item.url} target='target' ><List.Item key={item.course_id}>   
                             <Col span={10}>
                                 <img src={item.pic} alt=''/>
                             </Col>

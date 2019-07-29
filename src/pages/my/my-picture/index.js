@@ -3,7 +3,7 @@ import './picture.scss'
 import {Link} from 'react-router-dom'
 
 
-import { Row ,Col,Icon,Avatar,List,Card} from 'antd';
+import { Row ,Col,Icon,Avatar} from 'antd';
 
 function MyPicture(){
     return <div className='picture'>

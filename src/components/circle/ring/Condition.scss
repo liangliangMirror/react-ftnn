@@ -9,6 +9,9 @@ li{
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
+    p{
+        margin: 0;
+    }
     .uli{
         height: 6.5rem;
         width: 100%;
@@ -17,7 +20,6 @@ li{
         background: white;
         margin-top: 0.5rem;
         .portrait{
-            height: 3rem;
             padding: 0.7rem 0.5rem 0.5rem 1rem;
             border-bottom: 1px solid #ccc;
             .tx{
