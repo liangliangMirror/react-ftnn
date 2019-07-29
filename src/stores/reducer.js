@@ -18,11 +18,19 @@ export default (state = {
             }
         ],
         sorts: true,
+<<<<<<< HEAD
+=======
+        stock: "",
+>>>>>>> shen
     },
     //数据写这里
 }, action) => {
     switch (action.type) {
         //传值过来判断后做你想要的逻辑
+<<<<<<< HEAD
+=======
+
+>>>>>>> shen
         case 'Add_My_Other_Quotation_Hong_conter':
             return {
                 ...state,
@@ -51,6 +59,14 @@ export default (state = {
                 state.data.sorts = false;
             }
             return { ...state }
+<<<<<<< HEAD
+=======
+
+        case "STOCK":
+            state.data.stock = action.stock;
+            return { ...state }
+
+>>>>>>> shen
         default:
             return state
     }
