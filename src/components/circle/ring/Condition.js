@@ -3,9 +3,37 @@ import './Condition.scss';
 
 import { Carousel, WingBlank } from 'antd-mobile';
 class Condition extends React.Component {
-    state = {
-        data: ['1', '2', '3','4','5','6','7','8','9','10'],
-        
+    constructor(prpos){
+        super(prpos)
+        this.state = {
+            data: ['1', '2', '3','4','5','6','7','8','9','10'],
+            pin:[
+                {
+                    id:1,
+                    title:'雲狄',
+                    titles:'季度',
+                    img:require('./tz.jpg'),
+                    time:'21:15',
+                    zan:23
+                },
+                {
+                    id:2,
+                    title:'随机数',
+                    titles:'鼠标',
+                    img:require('./txtwo.jpg'),
+                    time:'16:00',
+                    zan:'51'
+                },
+                {
+                    id:3,
+                    title:'痞客邦',
+                    titles:'土方车',
+                    img:require('./txcs.jpg'),
+                    time:'15:23',
+                    zan:'10'
+                }
+            ]
+        }
       }
       componentDidMount() {
         setTimeout(() => {
@@ -65,114 +93,39 @@ class Condition extends React.Component {
                             </Carousel>
                         </WingBlank>
                 </div>
-                <div className="interest">
-                    <p className="p"><span>你可能感兴趣</span><span><em className="iconfont icon-ellipsis" style={{fontSize:'24px'}} /></span></p>
-                    <p className="portrait">
-                        <img src={require('./txcs.jpg')} className="tx" alt="头像"/>
-                        <span className="span"><em>雲狄</em>发表了文章</span>
-                        <span className="spant"><em className="iconfont icon-plus" style={{fontSize:'16px',color:'#50a6f2'}} />关注</span>
-                        <span className="spanr">05-25 21:15
-                            <em className="iconfont icon-fire-fill" style={{fontSize:'16px',color:'#fe4c0e',margin:'0'}} />
-                            <em className="iconfont icon-crown-fill" style={{fontSize:'16px',color:'#febe40'}} />
-                        </span>    
-                    </p>
-                    <p className="essay">
-                    <img src={require('./gushi.jpg')} className="tx" alt="gushi" style={{height:'100%',width:'100%'}}/>
-                    </p>
-                    <p className="zan">
-                        <span><em className="iconfont icon-like-fill" style={{fontSize:'16px',color:'#ffd2bb'}} /><em>19</em></span><span style={{float:'right'}}><em>13</em>评论·<em>14262</em>浏览</span>
-                    </p>
-                    <p className="discuss">
-                        <span><em className="iconfont icon-like" style={{fontSize:'16px',color:'#cdcdcd'}} />赞</span>
-                        <span><em className="iconfont icon-message-fill" style={{fontSize:'16px',color:'#cdcdcd'}} />评论</span>
-                        <span><em className="iconfont icon-share" style={{fontSize:'16px',color:'#cdcdcd'}} />分享</span>
-                    </p>
-                    <p className="speak">
-                        <span><em>远未见底</em>回复<em>雲狄</em> ：你好啊！</span>
-                        <span><em>雲狄</em>回复<em>远未见底</em> ：你也好！</span>
-                    </p>
-                </div>
-                <div className="interest">
-                    <p className="p"><span>你可能感兴趣</span><span><em className="iconfont icon-ellipsis" style={{fontSize:'24px'}} /></span></p>
-                    <p className="portrait">
-                        <img src={require('./txcs.jpg')} className="tx" alt="头像"/>
-                        <span className="span"><em>雲狄</em>发表了文章</span>
-                        <span className="spant"><em className="iconfont icon-plus" style={{fontSize:'16px',color:'#50a6f2'}} />关注</span>
-                        <span className="spanr">05-25 21:15
-                            <em className="iconfont icon-fire-fill" style={{fontSize:'16px',color:'#fe4c0e',margin:'0'}} />
-                            <em className="iconfont icon-crown-fill" style={{fontSize:'16px',color:'#febe40'}} />
-                        </span>    
-                    </p>
-                    <p className="essay">
-                    <img src={require('./gushi.jpg')} className="tx" alt="gushi" style={{height:'100%',width:'100%'}}/>
-                    </p>
-                    <p className="zan">
-                        <span><em className="iconfont icon-like-fill" style={{fontSize:'16px',color:'#ffd2bb'}} /><em>19</em></span><span style={{float:'right'}}><em>13</em>评论·<em>14262</em>浏览</span>
-                    </p>
-                    <p className="discuss">
-                        <span><em className="iconfont icon-like" style={{fontSize:'16px',color:'#cdcdcd'}} />赞</span>
-                        <span><em className="iconfont icon-message-fill" style={{fontSize:'16px',color:'#cdcdcd'}} />评论</span>
-                        <span><em className="iconfont icon-share" style={{fontSize:'16px',color:'#cdcdcd'}} />分享</span>
-                    </p>
-                    <p className="speak">
-                        <span><em>远未见底</em>回复<em>雲狄</em> ：你好啊！</span>
-                        <span><em>雲狄</em>回复<em>远未见底</em> ：你也好！</span>
-                    </p>
-                </div>
-                <div className="interest">
-                    <p className="p"><span>你可能感兴趣</span><span><em className="iconfont icon-ellipsis" style={{fontSize:'24px'}} /></span></p>
-                    <p className="portrait">
-                        <img src={require('./txcs.jpg')} className="tx" alt="头像"/>
-                        <span className="span"><em>雲狄</em>发表了文章</span>
-                        <span className="spant"><em className="iconfont icon-plus" style={{fontSize:'16px',color:'#50a6f2'}} />关注</span>
-                        <span className="spanr">05-25 21:15
-                            <em className="iconfont icon-fire-fill" style={{fontSize:'16px',color:'#fe4c0e',margin:'0'}} />
-                            <em className="iconfont icon-crown-fill" style={{fontSize:'16px',color:'#febe40'}} />
-                        </span>    
-                    </p>
-                    <p className="essay">
-                    <img src={require('./gushi.jpg')} className="tx" alt="gushi" style={{height:'100%',width:'100%'}}/>
-                    </p>
-                    <p className="zan">
-                        <span><em className="iconfont icon-like-fill" style={{fontSize:'16px',color:'#ffd2bb'}} /><em>19</em></span><span style={{float:'right'}}><em>13</em>评论·<em>14262</em>浏览</span>
-                    </p>
-                    <p className="discuss">
-                        <span><em className="iconfont icon-like" style={{fontSize:'16px',color:'#cdcdcd'}} />赞</span>
-                        <span><em className="iconfont icon-message-fill" style={{fontSize:'16px',color:'#cdcdcd'}} />评论</span>
-                        <span><em className="iconfont icon-share" style={{fontSize:'16px',color:'#cdcdcd'}} />分享</span>
-                    </p>
-                    <p className="speak">
-                        <span><em>远未见底</em>回复<em>雲狄</em> ：你好啊！</span>
-                        <span><em>雲狄</em>回复<em>远未见底</em> ：你也好！</span>
-                    </p>
-                </div>
-                <div className="interest">
-                    <p className="p"><span>你可能感兴趣</span><span><em className="iconfont icon-ellipsis" style={{fontSize:'24px'}} /></span></p>
-                    <p className="portrait">
-                        <img src={require('./txcs.jpg')} className="tx" alt="头像"/>
-                        <span className="span"><em>雲狄</em>发表了文章</span>
-                        <span className="spant"><em className="iconfont icon-plus" style={{fontSize:'16px',color:'#50a6f2'}} />关注</span>
-                        <span className="spanr">05-25 21:15
-                            <em className="iconfont icon-fire-fill" style={{fontSize:'16px',color:'#fe4c0e',margin:'0'}} />
-                            <em className="iconfont icon-crown-fill" style={{fontSize:'16px',color:'#febe40'}} />
-                        </span>    
-                    </p>
-                    <p className="essay">
-                    <img src={require('./gushi.jpg')} className="tx" alt="gushi" style={{height:'100%',width:'100%'}}/>
-                    </p>
-                    <p className="zan">
-                        <span><em className="iconfont icon-like-fill" style={{fontSize:'16px',color:'#ffd2bb'}} /><em>19</em></span><span style={{float:'right'}}><em>13</em>评论·<em>14262</em>浏览</span>
-                    </p>
-                    <p className="discuss">
-                        <span><em className="iconfont icon-like" style={{fontSize:'16px',color:'#cdcdcd'}} />赞</span>
-                        <span><em className="iconfont icon-message-fill" style={{fontSize:'16px',color:'#cdcdcd'}} />评论</span>
-                        <span><em className="iconfont icon-share" style={{fontSize:'16px',color:'#cdcdcd'}} />分享</span>
-                    </p>
-                    <p className="speak">
-                        <span><em>远未见底</em>回复<em>雲狄</em> ：你好啊！</span>
-                        <span><em>雲狄</em>回复<em>远未见底</em> ：你也好！</span>
-                    </p>
-                </div>
+                {
+                    this.state.pin.map(item=>{
+                        return (
+                            <div className="interest" key={item.id}>
+                                <p className="p"><span>你可能感兴趣</span><span><em className="iconfont icon-ellipsis" style={{fontSize:'24px'}} /></span></p>
+                                <p className="portrait">
+                                    <img src={item.img} className="tx" alt="头像"/>
+                                    <span className="span"><em>{item.title}</em>发表了文章</span>
+                                    <span className="spant"><em className="iconfont icon-plus" style={{fontSize:'16px',color:'#50a6f2'}} />关注</span>
+                                    <span className="spanr">05-25 {item.time}
+                                        <em className="iconfont icon-fire-fill" style={{fontSize:'16px',color:'#fe4c0e',margin:'0'}} />
+                                        <em className="iconfont icon-crown-fill" style={{fontSize:'16px',color:'#febe40'}} />
+                                    </span>    
+                                </p>
+                                <p className="essay">
+                                <img src={require('./gushi.jpg')} className="tx" alt="gushi" style={{height:'100%',width:'100%'}}/>
+                                </p>
+                                <p className="zan">
+                                    <span><em className="iconfont icon-like-fill" style={{fontSize:'16px',color:'#ffd2bb'}} /><em>{item.zan}</em></span><span style={{float:'right'}}><em>13</em>评论·<em>14262</em>浏览</span>
+                                </p>
+                                <p className="discuss">
+                                    <span><em className="iconfont icon-like" style={{fontSize:'16px',color:'#cdcdcd'}} />赞</span>
+                                    <span><em className="iconfont icon-message-fill" style={{fontSize:'16px',color:'#cdcdcd'}} />评论</span>
+                                    <span><em className="iconfont icon-share" style={{fontSize:'16px',color:'#cdcdcd'}} />分享</span>
+                                </p>
+                                <p className="speak">
+                                    <span><em>{item.titles}</em>回复<em>{item.title}</em> ：你好啊！</span>
+                                    <span><em>{item.title}</em>回复<em>{item.titles}</em> ：你也好！</span>
+                                </p>
+                            </div>
+                        )
+                    })
+                }
             </div>
         )
     }

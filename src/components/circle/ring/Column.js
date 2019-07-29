@@ -28,8 +28,6 @@ class Column extends React.Component {
             }, 500);
         })
 
-        console.log(mm)
-
         this.setState({
             mm: [...this.state.mm, ...mm],
             page: ++this.state.page
@@ -37,11 +35,11 @@ class Column extends React.Component {
     }
     gun() {
         let scrollTop =
-            document.documentElement.scrollTop || document.getElementsByClassName("more")[0].scrollTop;
+            document.documentElement.scrollTop || document.getElementsByClassName("zhuan")[0].scrollTop;
 
-        let windowHeight = document.getElementsByClassName("more")[0].clientHeight;
+        let windowHeight = document.getElementsByClassName("zhuan")[0].clientHeight;
 
-        let scrollHeight = document.getElementsByClassName("more")[0].scrollHeight;
+        let scrollHeight = document.getElementsByClassName("zhuan")[0].scrollHeight;
 
         let ih = scrollHeight - scrollTop - windowHeight
 
@@ -55,20 +53,20 @@ class Column extends React.Component {
     }
     render() {
         return (
-            <div className="zhuan">
+            <div className="zhuan" onScroll={this.gun}>
                 <p className="publish">
                     <em className="iconfont icon-edit" style={{fontSize:'24px'}} /><span>发表专栏文章</span>
                 </p>
                 <div className="entire">
                     <p><span>全部</span><span>精华</span><span>热门</span></p>
-                    <p>智能排序ˇ</p>
+                    <p>智能排序▼</p>
                 </div> 
                 {
                     this.state.mm.map(item => {
                         return (
                         <div className="journalism" key={item.id}>
                             <p className="portrait">
-                                <img src={item.author.avatar_url} className="tx" alt="头像"/>
+                                <img src={item.author.avatar_url} className="tx" alt=""/>
                                 <span><em>{item.author.loginname}</em><em style={{color:'#d8d8d8'}}>{item.last_reply_at}</em></span>
                                 <span className="span">{item.title}</span>
                                 <span style={{width:'25%',height:'5rem',float:'right'}}><img style={{width:'100%',height:'100%'}} src={require('./keji.jpg')} alt="头像"/></span>
