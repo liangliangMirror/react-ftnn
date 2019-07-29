@@ -95,6 +95,7 @@ class Gupiao extends React.Component {
                                         <p key={idx + 'a'}>
                                             <span className="pdownspan">
                                                 <span>{this.formatTime.bind(this, item.time)()}</span>
+                                                {/* {console.log(item.time)} */}
                                                 <span className={idx !== 0 ? item.ratio > this.state.minutemap.list[idx - 1].ratio ? "greenspan" : "redspan" : "greenspan"}> {item.price}</span>
                                             </span>
                                             <span className={idx !== 0 ? item.ratio > this.state.minutemap.list[idx - 1].ratio ? "greenspan" : "redspan" : "greenspan"} key={idx + 'b'}>{item.ratio}</span>

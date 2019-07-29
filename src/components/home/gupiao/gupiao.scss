@@ -7,6 +7,11 @@
     display: flex;
     flex-flow: column;
 
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
     .gphead {
         width: 100%;
         height: 3.75rem;

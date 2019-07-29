@@ -1,6 +1,13 @@
 .more {
     height: 523px;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+        overflow-y: hidden;
+        width: 0;
+        height: 0;
+    }
 }
 
 .more-item {
