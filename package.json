@@ -3,11 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "antd": "^3.20.6",
-=======
     "@antv/f2": "^3.4.0",
->>>>>>> 652822336e622ac0ad46f15c6b4e802dbf8b7f67
     "antd-mobile": "^2.2.14",
     "axios": "^0.19.0",
     "babel-plugin-import": "^1.12.0",

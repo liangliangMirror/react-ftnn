@@ -1,10 +1,8 @@
 export default (state = {
     data: {
         xxx: "xxx",
-<<<<<<< HEAD
         MyOtherQuotationHong:[],
-        IsLogin:false
-=======
+        IsLogin:false,
         head: [
             { leftbutton: false },
             { headmiddle: ["自选", "市场"] },
@@ -20,13 +18,11 @@ export default (state = {
             }
         ],
         sorts: true,
->>>>>>> 652822336e622ac0ad46f15c6b4e802dbf8b7f67
     },
     //数据写这里
 }, action) => {
     switch (action.type) {
         //传值过来判断后做你想要的逻辑
-<<<<<<< HEAD
         case 'Add_My_Other_Quotation_Hong_conter':
             return {
                 ...state,
@@ -37,7 +33,6 @@ export default (state = {
                 ...state,
                 IsLogin:action.payload
             }
-=======
         case 'HEAD':
             state.data.head = action.obj
             return { ...state }
@@ -56,7 +51,6 @@ export default (state = {
                 state.data.sorts = false;
             }
             return { ...state }
->>>>>>> 652822336e622ac0ad46f15c6b4e802dbf8b7f67
         default:
             return state
     }
