@@ -1,5 +1,7 @@
 import React from 'react'
 import './picture.scss'
+import {Link} from 'react-router-dom'
+
 
 import { Row ,Col,Icon,Avatar,List,Card} from 'antd';
 
@@ -22,11 +24,11 @@ function MyPicture(){
         </Col>
         </Row>
         <div className='picture-button'>
-            <p><span>0</span><span>提醒</span></p>
-            <p><span>0</span><span>收藏</span></p>
-            <p><span>0</span><span>卡劵</span></p>
-            <p><span>0</span><span>课程</span></p>
-            <p><span>0</span><span>待办</span></p>
+            <Link to='/mykecheng' className='picture-link'><p><span>0</span><span>提醒</span></p></Link>
+            <Link to='/mykecheng' className='picture-link'><p><span>0</span><span>收藏</span></p></Link>
+            <Link to='/mykecheng' className='picture-link'><p><span>0</span><span>卡劵</span></p></Link>
+            <Link to='/mykecheng' className='picture-link'><p><span>0</span><span>课程</span></p></Link>
+            <Link to='/mykecheng' className='picture-link'><p><span>0</span><span>待办</span></p></Link>
         </div>
     </div>
 }

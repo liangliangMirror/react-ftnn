@@ -16,6 +16,7 @@ import Help from '../pages/my/my-kefu/help'
 import HelpDetails from '../pages/my/my-kefu/details'
 import MyReg from '../pages/my/my-account/my-reg'
 import RegStcku from '../pages/my/my-account/my-stcku'
+import MyKecheng from '../pages/my/my-picture/my-kecheng'
 
 
 
@@ -47,6 +48,8 @@ class Router extends React.Component {
                 <Route path='/helpdetails' component={HelpDetails}></Route>
                 <Route path='/reg' component={MyReg}></Route>
                 <Route path='/stcku' component={RegStcku}></Route>
+                <Route path='/mykecheng' component={MyKecheng}></Route>
+
 
                 <Redirect from="/" to="/home" exact />
             </Switch>

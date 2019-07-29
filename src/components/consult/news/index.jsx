@@ -4,7 +4,7 @@ import ConsultCarousel from './carousel'
 // 快讯
 import Flash from './flash'
 // 主要内容
-import Main from './main'
+// import Main from './main'
 
 import './news.scss'
 
