@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
-
-function head($this) {
+function LR(type, value) {
     console.log(this)
 }
-connect(state => state)(head)
-export default head;
+
+export default connect(state => state)(LR);

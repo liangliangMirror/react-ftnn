@@ -3,24 +3,48 @@
     padding: 0 .625rem;
     box-sizing: border-box;
     overflow: auto;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
 
     .gphead {
         width: 100%;
-        height: 4.6875rem;
+        height: 3.75rem;
 
         .p1 {
             // height: 2.8125rem;
-            line-height: 2.8125rem;
+            // line-height: 2.8125rem;
             font-size: 1rem;
             color: rgba(240, 248, 255, 0.699);
+            margin: 0;
         }
+    }
+
+    .flex1 {
+        flex: 1;
+        overflow: auto;
     }
 
     .gpmx {
         display: flex;
+        position: relative;
+
+        .shade {
+            position: absolute;
+            bottom: .625rem;
+            width: 13.75rem;
+            height: 1.25rem;
+            background: #1b1b1b;
+        }
 
         .mx {
             flex: 1;
+            height: 14.75rem;
 
             .p {
                 display: flex;
@@ -32,8 +56,20 @@
             }
 
             .mxdiv {
-                display: flex;
-                justify-content: space-between;
+
+                overflow: auto;
+                height: 13.75rem;
+
+                p {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .pdownspan {
+                        width: 4.6875rem;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
 
                 .greenspan {
                     color: #58bc58;

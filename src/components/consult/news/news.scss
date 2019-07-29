@@ -2,6 +2,13 @@
     background-color: rgb(251, 249, 249);
     overflow-y: auto;
     height: 520px;
+
+    &::-webkit-scrollbar {
+        display: none;
+        overflow-y: hidden;
+        width: 0;
+        height: 0;
+    }
 }
 
 

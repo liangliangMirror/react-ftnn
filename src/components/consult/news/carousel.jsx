@@ -12,7 +12,7 @@ export default class ConsultCarousel extends React.Component {
         // simulate img loading
         setTimeout(() => {
             this.setState({
-                data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
+                data: ['https://pubimg.futunn.com/2019072701210357753ec6f6d13.jpg', 'https://pubimg.futunn.com/2019072601208934a229f6517cb.jpg', 'https://pubimg.futunn.com/201907260120882692bca10ff54.jpg'],
             });
         }, 100);
     }
@@ -22,21 +22,19 @@ export default class ConsultCarousel extends React.Component {
                 <Carousel
                     autoplay={false}
                     infinite
-                    // autoplay={true}
                     autoplayInterval={2000}
                     cellSpacing={5}
                     slideWidth={0.9}
-                    beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-                    afterChange={index => console.log('slide to', index)}
+                   
                 >
                     {this.state.data.map(val => (
-                        <a 
+                        <button
                             key={val}
-            
+                            href="###"
                             style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
                         >
                             <img
-                                src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                                src={`${val}`}
                                 alt=""
                                 style={{ width: '100%', verticalAlign: 'top' }}
                                 onLoad={() => {
@@ -45,7 +43,7 @@ export default class ConsultCarousel extends React.Component {
                                     this.setState({ imgHeight: 'auto' });
                                 }}
                             />
-                        </a>
+                        </button>
                     ))}
                 </Carousel>
             </WingBlank>

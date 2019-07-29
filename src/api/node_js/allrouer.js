@@ -20,4 +20,18 @@ Router.use('/my/*', proxy({
         "^/my": "/",
     }
 }))
+Router.use('/myapi/*', proxy({
+    target: "https://help.futu5.com",
+    changeOrigin: true,
+    pathRewrite: {
+        "^/myapi": "/",
+    }
+}))
+Router.use('/live/*', proxy({
+    target: "https://live.futunn.com",
+    changeOrigin: true,
+    pathRewrite: {
+        "^/live": "/",
+    }
+}))
 module.exports = Router;

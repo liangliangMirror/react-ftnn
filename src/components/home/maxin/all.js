@@ -21,6 +21,7 @@ class All extends React.Component {
                 id,
             }
         })
+        window.localStorage.setItem("id", id)
         this.props.dispatch({
             type: "SORT",
             ok: false

@@ -6,6 +6,7 @@ app.use(express.static('./'))
 app.use(allRouter);
 app.use('/api/*', proxy({
     target: "https://www.futunn.com",
+    // target: "https://help.futu5.com",
     changeOrigin: true,
     pathRewrite: {
         "^/api": "/",

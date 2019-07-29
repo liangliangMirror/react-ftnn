@@ -1,0 +1,68 @@
+.my-other-staff{
+    background-image: url(https://static.futunn.com/companywebsite/assets/images/top01.5bc67244d7.jpg);
+    background-color: #fff;
+    background-size: contain;
+    text-align: center;
+    overflow: hidden;
+    p{
+        margin-top: 210px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .staff-div{
+        background-color: #fff;
+        margin: 18px;
+        padding: 20px;
+        border-radius: 10px;
+        h2{
+            font-size: 20px;
+            font-weight: bolder;
+            line-height: 30px;
+            margin: 0;
+        }
+        i{
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            border-radius: 9px;
+            background-image: url(https://static.futunn.com/companywebsite/assets/images/i.53e4949d03.png);
+            background-position: -15px -65px;
+        }
+    }
+    .staff-qiye{
+        margin: 35px 18px 50px;
+        h1{
+            font-size: 20px;
+            color: #edcf96;
+            margin-bottom: 20px;
+        }
+        .ant-carousel .slick-slide {
+            text-align: center;
+            height: 160px;
+            line-height: 160px;
+            background: #364d79;
+            overflow: hidden;
+          }
+          
+          .ant-carousel .slick-slide h3 {
+            color: #fff;
+          }
+    }
+    h4{
+        color: #edcf96; 
+    }
+   .staff-btm{
+       position: fixed;
+       bottom: 0;left: 0;right: 0;
+       height: 70px;
+       background-color: #aaa;
+       p{
+           margin: 10px;
+           background-color: #b89c6c;
+           border-radius: 10px;
+           line-height: 50px;
+           font-size: 18px;
+           color: #fff;
+       }
+   }
+}

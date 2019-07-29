@@ -1,0 +1,75 @@
+.simulation {
+    background-color: #fff;
+
+    .simulation-top {
+        padding: 10px;
+
+        img {
+            width: 44px;
+            height: 44px;
+        }
+
+        h4 {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0;
+        }
+
+    }
+
+    .simulation-money {
+        margin: 15px;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 0.04rem 0.16rem 0 rgba(0, 0, 0, 0.16);
+
+        h2 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        h3 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        h1 {
+            font-size: 40px;
+            line-height: 52px;
+        }
+
+        .simulation-money-row {
+            text-align: center;
+            margin-top: 20px;
+
+            h3 {
+                display: block;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 5px;
+            }
+
+            i {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-position: -30px -25px;
+            }
+        }
+    }
+
+    .simulation-table {
+        ul {
+            height: 120px;
+        }
+    }
+}

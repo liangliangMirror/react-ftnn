@@ -55,8 +55,6 @@ class ConsultHeader extends Component {
     }
 
     go(path) {
-        console.log(this.props);
-        console.log(path);
 
     }
 
