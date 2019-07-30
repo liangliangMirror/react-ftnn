@@ -64,6 +64,7 @@ class GrowTask extends React.Component{
         return <div className='task-grow'>
         {
             this.state.datalist.map(item=>{
+                // eslint-disable-next-line
                 return <div key={item.h2} className='task-grow-h2' key={item.h2}>
                     <Row className='h2-row'>
                         <Col span={6}>

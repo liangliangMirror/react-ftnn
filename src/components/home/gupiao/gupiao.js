@@ -60,11 +60,11 @@ class Gupiao extends React.Component {
         })
     }
     formatTime(time) {
-        var days = time / 1000 / 60 / 60 / 24;
+        var days = time / 60 / 60 / 24;
         var daysRound = Math.floor(days);
-        var hours = time / 1000 / 60 / 60 - (24 * daysRound)
+        var hours = time / 60 / 60 - (24 * daysRound)
         var hoursRound = Math.floor(hours);
-        var minutes = time / 1000 / 60 - (60 * hoursRound) - (24 * 60 * daysRound)
+        var minutes = time / 60 - (60 * hoursRound) - (24 * 60 * daysRound)
         var minutesRound = Math.floor(minutes);
         return hoursRound + ":" + minutesRound;
     }

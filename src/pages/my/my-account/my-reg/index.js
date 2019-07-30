@@ -23,6 +23,7 @@ class MyReg extends React.Component{
         let canvas = document.getElementsByClassName("myCanvas")[0];
         // console.log(canvas)
         let cantxt = canvas.getContext("2d");
+        // eslint-disable-next-line
         canvas.height = canvas.height;
         cantxt.fillStyle = "pink";
         cantxt.fillRect(0,0,canvas.width,canvas.height);
