@@ -51,8 +51,8 @@ class Gupiao extends React.Component {
 
     }
     async ajax(time, id) {
-        const { data: { data: minutemap } } = await axios.get(`http://localhost:3100/api/trade/quote-minute-v2?security_id=${id}&_=${time}‬`);
-        const { data: { data: details } } = await axios.get(`http://localhost:3100/api/trade/quote-basic-v3?security_id=${id}&_=${time}`);
+        const { data: { data: minutemap } } = await axios.get(`http://47.101.143.75:3100/api/trade/quote-minute-v2?security_id=${id}&_=${time}‬`);
+        const { data: { data: details } } = await axios.get(`http://47.101.143.75:3100/api/trade/quote-basic-v3?security_id=${id}&_=${time}`);
         this.setState({
             minutemap: { ...minutemap },
             details: { ...details },

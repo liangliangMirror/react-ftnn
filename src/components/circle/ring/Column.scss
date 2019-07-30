@@ -1,0 +1,71 @@
+.zhuan{
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .publish{
+        width: 100%;
+        height: 3rem;
+        background: white;
+        margin: 0.5rem 0;
+        padding-left: 1rem;
+        line-height: 3rem;
+    }
+    .entire{
+        display: flex;
+        padding: 0.5rem 1rem;
+        background: white;
+        justify-content:space-between;
+        border-bottom:0.1rem solid #eee;
+        p:first-child{
+            span{
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    .journalism{
+        width: 100%;
+        height: 8.5rem;
+        background: white;
+        border-bottom: 1px solid #ccc;
+        .portrait{
+            height: 3rem;
+            padding: 0.7rem 0.5rem 0.5rem 1rem;
+            color: #626262;
+            .tx{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 1rem;
+            float: left;
+            }
+            span{
+                float: left;
+                margin-left: 0.5rem;
+                line-height: 2rem;
+                font-size: 12px;
+            }
+            .span{
+                width:69%;
+                font-size: 15px;
+                float:left;
+                line-height: 1.5rem;
+                height: 2.8rem;
+                display: -webkit-box;
+                overflow: hidden;  
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .spacing{
+                width:69%;
+                font-size: 11px;
+                float:left;
+                line-height: 1rem;
+                display: -webkit-box;
+                overflow: hidden;  
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                color: #a1a1a1;
+                margin-top:0.5rem;
+            }
+        } 
+    }
+}

@@ -16,8 +16,6 @@ class Data extends Component {
     async getdata() {
         let data = (await axios.get("http://localhost:3100/api/news/news-list?page=0&page_size=10&_=" + this.state.nowtime)).data.data.news_list
 
-        console.log(data);
-        console.log(this.state.nowtime)
 
         // 延迟执行
         await new Promise((resolve) => {
@@ -31,7 +29,6 @@ class Data extends Component {
             nowtime: Date.now() - 122431158721,
         })
 
-        console.log(this.state.nowtime)
 
     }
 
@@ -44,7 +41,6 @@ class Data extends Component {
         let scrollHeight = document.getElementsByClassName("flash-data")[0].scrollHeight;
 
         let ih = scrollHeight - scrollTop - windowHeight
-        console.log(scrollTop, windowHeight, scrollHeight, ih)
 
         if (ih <= 1) {
             this.getdata();

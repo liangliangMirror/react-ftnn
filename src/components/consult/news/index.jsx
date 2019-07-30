@@ -4,7 +4,10 @@ import ConsultCarousel from './carousel'
 // 快讯
 import Flash from './flash'
 // 主要内容
-// import Main from './main'
+import Main from './main'
+// 专题
+import Special from './Special'
+
 
 import './news.scss'
 
@@ -20,9 +23,12 @@ class News extends Component {
                 <div className="news-flash">
                     <Flash />
                 </div>
-                {/* <div className="news-main">
+                <div className="news-main">
                     <Main />
-                </div> */}
+                </div>
+                <div className="news-special">
+                    <Special />
+                </div>
             </div>
         )
     }
